@@ -1,0 +1,97 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/loginBg.jpg") 0 0 repeat-x;
+}
+
+.title {
+    width: 1000px;
+    margin: 0 auto;
+    background: url("../img/login_bg.jpg") 0 0 no-repeat;
+}
+
+.title1 {
+    padding-top: 102px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.title1 h1 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+.main {
+    width: 388px;
+    height: 284px;
+    margin: 0 auto;
+}
+
+
+
+.loginForm {
+    background: url("../img/formBg.png") 0 0 no-repeat;
+    padding: 90px 38px 48px 30px;
+}
+
+.loginForm label {
+    width: 20%;
+    display: inline-block;
+}
+
+.text {
+    height: 60px;
+}
+
+.text input {
+    width: 66%;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid rgb(178, 178, 178);
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+
+}
+
+
+.text input:active, 
+.text input:focus {
+    border: 1px solid rgba(91, 90, 90, 0.7);
+    background: rgba(238, 236, 240, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+}
+
+.button {
+    margin-left: 70px;
+}
+
+
+.button input{
+    width: 30%;
+    cursor: pointer;
+    background: #54a4d7;
+    padding: 6px 18px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 22px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.07) inset,
+    0px 0px 0px 3px rgb(254, 254, 254),
+    0px 5px 3px 3px rgb(210, 210, 210);
+
+}
+
+.button input:hover{
+    background: rgb(74, 179, 198);
+}
+
+.button input:active, .button input:focus, {
+    background: #2a5989;
+    border: 1px solid rgb(12, 76, 87);
+    box-shadow: 0px 1px 6px 4px rgba(0, 0, 0, 0.2) inset;
+}
+

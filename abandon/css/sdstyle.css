@@ -1,0 +1,349 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 12px;
+    background: #4287c2;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*-----------公共样式----------*/
+/*header*/
+.header{
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    background: linear-gradient(to bottom,#60acf0,#64a5df,#62a0dd,#5994d6,#4f8ace,#4880ca);
+}
+.header h1{
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    padding-left:80px;
+    text-shadow: 2px 1px #000;
+    
+}
+.headertext{
+    float: right;
+    color: #fff;
+    margin-right: 50px;
+
+}
+.headertext p{
+    display: inline-block;
+    font-weight: bold;
+}
+.headertext a{
+    width: 50px;
+    display: inline-block;
+    border: 1px solid #679e43;
+    background: linear-gradient(to bottom,#baf076,#a2d866,#9cd055,#8dc838,#8bc93a);
+    line-height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+
+}
+.headertext a:hover{
+    border: 1px solid #192b02;
+    border-radius: 4px;
+    font-weight: bold;
+    background: linear-gradient(to bottom,#70b21c,#5c9613,#47740e,#3b6209,#2b4906);
+}
+/*时间*/
+.time{
+    height: 28px;
+    line-height: 28px;
+    background: linear-gradient(to bottom,#f5f9f8,#eef2fb,#e2ecf5,#e2ecf5,#e0edf6);
+    padding-left: 20px;
+    color: #808589;
+}
+#time{
+    float: left;
+    background: url("../img/time.png") 0 center no-repeat;
+    padding-left: 26px;
+}
+.time a{
+    float: right;
+    margin-right: 50px;
+    color: #626367;
+}
+
+/*主体内容*/
+.main{
+    border-top: 1px solid #c2ccd5;
+    display: flex;  /*变为弹性盒模型*/
+    background: #fff;
+}
+/*左边*/
+.left{
+    width: 168px;
+    background: url("../img/leftBg.png") 0 0 repeat-y;
+    margin-right: 10px;
+    min-height: 520px;
+
+}
+.left h2{
+    width: 140px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #60b3e7;
+    margin: 10px  auto;
+    box-shadow:4px 4px rgba(212,212,212,0.7);
+}
+
+
+.list{
+    margin: 0 20px;
+    font-weight: bold;
+}
+.list li{
+    line-height: 40px;
+    border-bottom: 1px solid rgba(212,212,212,0.5) ;
+}
+.list img{
+	margin-right:5px;
+	margin-top:2px;
+}
+
+.list li:hover{
+    background-color: #acd5f5;
+    border-radius: 4px;
+}
+.list li:active, #active{
+    background-color: #92c609;
+    border-radius: 4px;
+}
+.list a{
+    color: #0042a8;
+    display: inline-block;
+    padding-left: 10px;
+    width: 90%;
+}
+
+
+/*右边*/
+.right{
+    width: 85%;
+}
+.top{
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e6eaf6;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #fefefe,#ffffff,#f6fafd);
+    color: #4a4a4a;
+    padding-left: 30px;
+}
+.top strong{
+    background: url("../img/home.png") 0 center no-repeat;
+    display: inline-block;
+    padding-left: 30px;
+}
+.top span{
+    color: #2179a9;
+    font-weight:  bold;
+}
+
+/*搜索栏*/
+.search{
+    line-height:50px;
+    background: #f6fafd;
+    padding-left: 24px;
+}
+.search .text{
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    border: 1px solid #8ab2d5;
+    border-radius: 4px;
+}
+.search .button{
+    margin-left: 40px;
+    width: 100px;
+    padding: 0 20px;
+    height: 30px;
+    border: 1px solid #7ba92c;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    background:#87c212 url("../img/search.png") 10px center no-repeat;
+}
+.search .button:focus{
+    outline: none;
+    background-color: #5d8410;
+}
+.search a{
+    width: 80px;
+    padding-left:40px;
+    float: right;
+    margin: 10px 60px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #0c89de;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    background:#47acf1 url("../img/tianjia.png") 10px center no-repeat;
+    display: inline-block;
+}
+.search a:hover,.search a:active{
+    background-color: #0778c5;
+}
+.search span{
+    margin-left: 10px;
+}
+.search select{
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #0c89de;
+}
+
+/*---------成绩查询页面-------*/
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+	margin-top:20px;
+}
+
+.table tr {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.table tr:hover {
+    background: #e9f9ca;
+}
+
+
+.table td a {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+
+}
+
+/*----个人信息页面------*/
+.right .text2{
+	margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 30px;
+    border: 1px dashed #3d4f1b;
+	
+}
+.right .text2 p{
+	font-weight:bold;
+	margin-left:50px;
+}
+.right .text2 span{
+	color: #bd644e;
+}
+
+/*------密码修改页面--------*/
+
+.pwd {
+    border: 1px solid #9ac70f;
+    padding: 20px;
+    margin: 20px;
+}
+
+.pwd div {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.pwd label {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+}
+
+.pwd input {
+    width: 260px;
+    line-height: 30px;
+    border-radius: 4px;
+    padding-left: 10px;
+    border: 1px solid #4987c0;
+    box-shadow: 1px 1px 1px #99afc4;
+}
+
+.pwd input:focus {
+    border: 1px solid #0e56a8;
+    background: rgba(238, 236, 240, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.9) inset;
+}
+
+.pwd span {
+    margin-left: 20px;
+    color: #faca0d;
+}
+
+
+
+.pwd .button{
+    margin-left: 240px;
+    padding-top: 20px;
+}
+
+
+.pwd .button input {
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    border: transparent;
+    background: linear-gradient(to bottom, #85c0ec, #6aa7d6, #508dc6, #306fb4, #17559e);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pwd .button a:active,
+.pwd .button a:focus,
+.pwd .button a:hover{
+    background: linear-gradient(to bottom, #7aaed4, #578bb4, #406e99, #225792, #0d2d54);
+}
+
+/*----------学生首页----------*/
+.person {
+    height: 108px;
+    margin: 80px 50px;
+    float: left;
+}
+.right .wel {
+    float: left;
+    margin-top: 100px;
+}
+
+.right .wel h2{
+    font-size: 30px;
+    line-height: 50px;
+    color: #0a5eb6;
+}
+
+.right .wel p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #5a656c;
+}
+

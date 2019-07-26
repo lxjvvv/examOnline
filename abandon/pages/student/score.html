@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线考试系统</title>
+<link href="../../css/sdstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!--头部-->
+    <div class="header">
+        <h1>在线考试系统</h1>
+        <div class="headertext">
+            <p><span>下午好！</span><span style="color: #fff21b"> XX学生</span> , 欢迎你！</p>
+            <a href="../login.html">退出</a>
+        </div>
+    </div>
+<!--时间-->
+    <div class="time">
+        <span id="time">2015年1月1日 11:11  星期一</span>
+        <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+    </div>
+<!--主体内容-->
+    <div class="main">
+    
+        <div class="left">
+            <h2>功能列表</h2>
+            <div>
+                <ul class="list">
+                    <li id="active"><a href="score.html"><img src="../../img/zd.png">成绩查询</img></a></li>
+                    <li><a href="sdmessage.html"><img src="../../img/yh.png">个人信息</img></a></li>
+                    <li><a href="password.html"><img src="../../img/mm.png">密码修改</img></a></li>
+                    <li><a href="login.html"><img src="../../img/tc.png">退出系统</img></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="top">
+                <strong>你现在所在的位置是:</strong>
+                <span>成绩查询页面</span>
+            </div>
+            
+            <div class="search">
+                <span>科目名称：</span>
+                <input type="text" class="text" placeholder="请输入科目的名称"/>
+                
+                <span>学期：</span>
+                <select name="tigong" >
+                    <option value="">--请选择--</option>
+                    <option value="">2018年秋季学期</option>
+                    <option value="">2019年春季学期</option>
+                </select>
+
+                <input type="button" class="button" value="查询"/>
+                <a >打印成绩单</a>
+            </div>
+            
+            <!--账单表格 样式和供应商公用-->
+            <table class="table" cellpadding="0" cellspacing="0">
+                <tr style="background-color:#f6f7f9">
+                    <th width="10%">序号</th>
+                    <th width="20%">科目名称</th>
+                    <th width="10%">授课老师</th>
+                    <th width="10%">成绩</th>
+                    <th width="10%">学分</th>
+                    <th width="10%">绩点</th>
+                    <th width="30%">操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>a</td>
+                    <td>XX老师</td>
+                    <td>90</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>
+                        <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/>查看</a>
+                    </td>
+                </tr>
+                <tr style="background-color:#f6f7f9">
+                    <td>2</td>
+                    <td>b</td>
+                    <td>XX老师</td>
+                    <td>80</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>
+                        <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/>查看</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+<script src="../../js/time.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线考试管理系统</title>
+    <link rel="stylesheet" href="../../css/public.css"/>
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<!--头部-->
+    <header class="publicHeader">
+        <h1>在线考试管理系统</h1>
+        <div class="publicHeaderR">
+            <p><span>下午好！</span><span style="color: #fff21b"> xxx老师</span> , 欢迎你！</p>
+            <a href="#">退出</a>
+        </div>
+    </header>
+<!--时间-->
+    <section class="publicTime">
+        <span id="time">2015年1月1日 11:11  星期一</span>
+     
+    </section>
+<!--主体内容-->
+    <section class="publicMian ">
+        <div class="left">
+            <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+            <nav>
+                <ul class="list">
+                    <li id="active"><a href="TestList.html">试题管理</a></li>
+                    <li><a href="examination.html">考卷管理</a></li>
+                    <li><a href="userView.html">个人管理</a></li>
+                    <li><a href="#">退出系统</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="location">
+                <strong>你现在所在的位置是:</strong>
+                <span>试题管理页面</span>
+            </div>
+            <div class="search">
+                <span>专业：</span>
+                <input type="text" placeholder="请输入专业的名称"/>
+                
+                <span>年级：</span>
+                <select name="tigong" >
+                    <option value="">--请选择--</option>
+                    <option value="">2017级</option>
+                    <option value="">2018级</option>
+                </select>
+
+                <span>科目：</span>
+                <select name="fukuan">
+                    <option value="">--请选择--</option>
+                    <option value="">一体化软件工程与实践</option>
+                    <option value="">高等数学</option>
+                </select>
+
+                <input type="button" value="查询"/>
+                <a href="#">添加试卷</a>
+            </div>
+            <!--账单表格 样式和供应商公用-->
+            <table class="providerTable" cellpadding="0" cellspacing="0">
+                <tr class="firstTr">
+                    <th width="10%">试卷编号</th>
+                    <th width="20%">出卷人员</th>
+                    <th width="10%">出卷时间</th>
+                    <th width="10%">考试学期</th>
+                    <th width="10%">考试时长</th>
+                    <th width="10%">卷面满分</th>
+                    <th width="30%">操作</th>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>教师id</td>
+                    <td>2018.5.28</td>
+                    <td>2018年秋</td>
+                    <td>90分钟</td>
+                    <td>100分</td>
+                    <td>
+                        <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                        <a href="#"><img src="../../img/xiugai.png" alt="修改" title="修改"/></a>
+                        <a href="#" class="removeBill"><img src="../../img/schu.png" alt="删除" title="删除"/></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>132</td>
+                    <td>教师id</td>
+                    <td>2018.5.29</td>
+                    <td>2018年秋</td>
+                    <td>90分钟</td>
+                    <td>100分</td>
+                    <td>
+                        <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                        <a href="#"><img src="../../img/xiugai.png" alt="修改" title="修改"/></a>
+                        <a href="#" class="removeBill"><img src="../../img/schu.png" alt="删除" title="删除"/></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+<!--点击删除按钮后弹出的页面-->
+<div class="deleteTest"></div>
+<div class="remove" id="removeBi">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该试题吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+    </footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script src="js/time.js"></script>
+
+</body>
+</html>

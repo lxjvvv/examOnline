@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线考试管理系统</title>
+    <link rel="stylesheet" href="../../css/public.css">
+    <link rel="stylesheet" href="../../css/style.css"/>
+</head>
+<body>
+<!--头部-->
+<header class="publicHeader">
+    <h1>在线考试管理系统</h1>
+
+    <div class="publicHeaderR">
+        <p><span>下午好！</span><span style="color: #fff21b"> xxx老师</span> , 欢迎你！</p>
+        <a href="#">退出</a>
+    </div>
+</header>
+<!--时间-->
+<section class="publicTime">
+    <span id="time">2015年1月1日 11:11  星期一</span>
+   
+</section>
+<!--主体内容-->
+<section class="publicMian ">
+    <div class="left">
+        <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+        <nav>
+            <ul class="list">
+                <li><a href="TestList.html">试题管理</a></li>
+                <li id="active"><a href="examination.html">考卷管理</a></li>
+                <li><a href="userView.html">个人管理</a></li>
+                <li><a href="#">退出系统</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>考卷管理页面</span>
+        </div>
+        <div class="search">
+            <span>试卷编号：</span>
+            <input type="text" placeholder="请输入试卷的编号"/><!--有背景文字的文本框-->
+            <input type="button" value="查询"/>
+        </div>
+        <!--考试管理操作表格-->
+        <table class="providerTable" cellpadding="0" cellspacing="0">
+            <tr class="firstTr">
+                <th width="10%">试卷编码</th>
+                <th width="20%">参考专业</th>
+                <th width="10%">参考年级</th>
+                <th width="10%">考试地点</th>
+                <th width="10%">考试时间</th>
+                <th width="10%">考试状态</th>
+                <th width="30%">操作</th>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>软件工程</td>
+                <td>2018级</td>
+                <td>信息科学与技术学院</td>
+                <td>2019.1.1</td>
+                <td>结束</td>
+                <td>
+                    <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                    <a href="#"><img src="../../img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a href="#" class="removeProvider"><img src="../../img/fb.png" alt="删除" width="35" height="21" title="发布"/></a>
+                </td>
+            </tr>
+            <tr>
+                <td>132</td>
+                <td>软件工程</td>
+                <td>2018级</td>
+                <td>信息科学与技术学院</td>
+                <td>2019.7.1</td>
+                <td>未开始</td>
+                <td>
+                    <a href="#"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                    <a href="#"><img src="../../img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a href="#" class="removeProvider"><img src="../../img/fb.png" alt="删除" width="35" height="21" title="发布"/></a>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</section>
+
+<!--点击发布按钮后弹出的页面-->
+<div class="deleteTest"></div>
+<div class="remove" id="removeProv">
+   <div class="removerChid">
+       <h2>提示</h2>
+       <div class="removeMain" >
+           <p>你确定要发布该考卷吗？</p>
+           <a href="#" id="yes">确定</a>
+           <a href="#" id="no">取消</a>
+       </div>
+   </div>
+</div>
+
+
+<footer class="footer">
+</footer>
+
+<script src="../../js/jquery.js"></script>
+<script src="../../js/js.js"></script>
+<script src="../../js/time.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>在线考试系统</title>
+<link rel="stylesheet" href="../../css/adminstyle.css"/>
+</head>
+<body>
+<!--头部-->
+<header class="publicHeader">
+    <h1>在线考试系统</h1>
+
+    <div class="publicHeaderR">
+        <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+        <a href="login.html">退出</a>
+    </div>
+</header>
+<!--时间-->
+<section class="publicTime">
+    <span id="time">2015年1月1日 11:11  星期一</span>
+    <a href="#">温馨提示：为了能正常浏览，请使用高版本浏览器！（IE10+）</a>
+</section>
+<!--主体内容-->
+<section class="publicMian ">
+    <div class="left">
+        <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
+        <nav>
+            <ul class="list">
+              <li id="active"><a href="textmag.html">考试管理</a></li>
+                <li><a href="annomag.html">公告管理</a></li>
+                <li><a href="usermag.html">个人信息管理</a></li>
+                 <li><a href="password.html">密码修改</a></li>
+                <li><a href="login.html">退出系统</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right">
+        <div class="location">
+            <strong>你现在所在的位置是:</strong>
+            <span>考试管理页面 >> 订单添加页面</span>
+        </div>
+        <div class="providerAdd">
+            <form action="#">
+                <!--div的class 为error是验证错误，ok是验证成功-->
+                <div class="">
+                    <label for="providerId">试卷编号：</label>
+                    <input type="text" name="providerId" id="providerId" placeholder="322"/>
+                    <span>*</span>
+                </div>
+                <div>
+                    <label for="providerName">出卷时间：</label>
+                    <input type="text" name="providerName" id="providerName" placeholder="2019-06-06"/>
+                    <span >*</span>
+                </div>
+                <div>
+                    <label for="people">考试时长：</label>
+                    <input type="text" name="people" id="people" placeholder="90min"/>
+                    <span>*</span>
+
+                </div>
+                <div>
+                    <label for="phone">教师id：</label>
+                    <input type="text" name="phone" id="phone" placeholder="Mr.li"/>
+                    <span>*</span>
+                </div>
+               
+               
+            </form>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+</footer>
+<script src="js/time.js"></script>
+
+</body>
+</html>
