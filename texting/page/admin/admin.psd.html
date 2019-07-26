@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>管理员--考卷管理</title>
+
+<script src="../../js/jquery.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+<link href="../../css/bodylatest.css" rel="stylesheet" type="text/css" />
+<script src="../../js/menuadapter.js"></script>
+<link rel="stylesheet" href="../../css/public.css"/>
+<link href="../../css/bodylatest.css" rel="stylesheet" type="text/css" />  
+<script src="../../js/jquery.js"></script>
+<script src="../../js/js.js"></script>
+</head>
+
+<body>
+<!--header-->
+<div class="header">
+<div class="container">
+<div class="row">
+<h3>在线考试系统--管理员端</h3>
+<div class="row1">
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+     xxx管理员
+      <span class="caret"></span>         
+    </button>
+     
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+       <li>
+         <a href="admin.meg.html">个人信息</a>            
+      </li>
+      <li role="presentation">
+         <a href="admin.psd.html">修改密码</a>             
+      </li>
+ 
+      <li role="presentation">
+         <a href="#">切换账号</a>          
+      </li>
+      <li role="presentation">
+         <a href="#">退出登陆</a>            
+      </li>
+    </ul>
+    <a href="#" class="exit"><img src="../../img/exit.png" width="25" height="25">&nbsp;退出登陆</div></a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<!--left-->
+<div class="left">
+<div id="menu">
+ <!--隐藏菜单-->
+    <div id="ensconce">
+        <h2>
+            <img src="../../img/show.png" alt="">
+            展开显示功能
+        </h2>
+    </div>
+
+    <!--显示菜单-->
+    <div id="open">
+        <div class="navH">
+          功能列表
+            <span><img class="obscure" src="../../img/obscure.png" alt=""></span>
+        </div>
+        <div class="navBox">
+            <ul>
+                <li>
+                    <h2 class="obtain"><a href="admin.text.html">试卷管理</a></h2>
+                    
+                </li>
+                <li>
+                    <h2 class="obtain"><a href="admin.title.html">试题管理</a></h2>
+                   
+                </li>
+                <li>
+                    <h2 class="obtain">成绩管理<i></i></h2>
+                    <div class="secondary">
+                        <h3><a href="admin.score.html">大一</a></h3>
+                        <h3><a href="admin.score.html">大二</a></h3>
+                        <h3><a href="admin.score.html">大三</a></h3>
+                        <h3><a href="admin.score.html">大四</a></h3>
+                       
+                    </div>
+                </li>
+                <li>
+                    <h2 class="obtain"><a href="admin.temeg.html">教师信息管理</a></h2>
+                   
+                </li>
+                <li>
+                    <h2 class="obtain"><a href="admin.stmeg.html">学生信息管理</a></h2>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>    
+<!--left end-->
+<div class="right">
+	<div class="providerAdd">
+                <form action="#">
+                    <!--div的class 为error是验证错误，ok是验证成功-->
+                    <div class="">
+                        <label for="oldPassword">旧密码：</label>
+                        <input type="password" name="oldPassword" id="oldPassword" required/>
+                        <span>*请输入原密码</span>
+                    </div>
+                    <div>
+                        <label for="newPassword">新密码：</label>
+                        <input type="password" name="newPassword" id="newPassword" required/>
+                        <span >*请输入新密码</span>
+                    </div>
+                    <div>
+                        <label for="reNewPassword">确认新密码：</label>
+                        <input type="password" name="reNewPassword" id="reNewPassword" required/>
+                        <span >*请输入新确认密码，保证和新密码一致</span>
+                    </div>
+                    <div class="providerAddBtn">
+                        <!--<a href="#">保存</a>-->
+                        <input type="button" value="保存" onclick="history.back(-1)"/>
+                    </div>
+                </form>
+            </div>
+</div>
+<!--right end-->
+</body>
+</html>

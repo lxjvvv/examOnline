@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学生成绩查询</title>
+
+<script src="../../js/jquery.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+<link href="../../css/bodylatest.css" rel="stylesheet" type="text/css" />
+<script src="../../js/menuadapter.js"></script>
+<link rel="stylesheet" href="../../css/public.css"/>
+<link href="../../css/bodylatest.css" rel="stylesheet" type="text/css" />  
+<script src="../../js/jquery.js"></script>
+<script src="../../js/js.js"></script>
+</head>
+
+<body>
+<!--header-->
+<div class="header">
+<div class="container">
+<div class="row">
+<h3>在线考试系统--学生端</h3>
+<div class="row1">
+<div class="dropdown">
+    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+     xxx学生
+      <span class="caret"></span>         
+    </button>
+     
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li>
+         <a href="stmessage.html">个人信息</a>            
+      </li>
+      <li role="presentation">
+         <a href="stPwd.html">修改密码</a>             
+      </li>
+ 
+      <li role="presentation">
+         <a href="../login.html">切换账号</a>          
+      </li>
+      <li role="presentation">
+         <a href="../index.html">退出登陆</a>            
+      </li>
+    </ul>
+    <a href="#" class="exit"><img src="../../img/exit.png" width="25" height="25">&nbsp;退出登陆</div></a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+<!--left-->
+<div class="left">
+<div id="menu">
+ <!--隐藏菜单-->
+    <div id="ensconce">
+        <h2>
+            <img src="../../img/show.png" alt="">
+            展开显示功能
+        </h2>
+    </div>
+
+    <!--显示菜单-->
+    <div id="open">
+        <div class="navH">
+          功能列表
+            <span><img class="obscure" src="../../img/obscure.png" alt=""></span>
+        </div>
+        <div class="navBox">
+            <ul>
+                <li>
+                    <a href="stTest.html"><h2 class="obtain">在线考试</h2></a>
+                    
+                </li>
+                
+                <li>
+                    <h2 class="obtain1">我的成绩<i></i></h2>
+                    <div class="secondary">
+                        <a href="stScore.html"><h3>成绩查询</h3></a>
+                        <a href="../admin/admin.score.html">><h3>成绩分析</h3></a>
+                       
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>    
+<!--left end-->
+
+<div class="right">
+  <div class="content">
+            <div class="search">
+                <span>试卷名：</span>
+                <input type="text" placeholder="请输入试卷名"/>
+                <input type="button" value="查询"/>
+                <a href="userAdd.html">添加</a>
+            </div>
+            <!--用户-->
+            <table class="providerTable" cellpadding="0" cellspacing="0">
+                <tr class="firstTr">
+                    <th width="10%">试卷名称</th>
+                     <th width="10%">科目</th>
+                    <th width="10%">出卷人</th>
+                    <th width="10%">难度</th>
+                    <th width="10%">成绩</th>
+                     <th width="20%">出题时间</th>
+                    <th width="30%">操作</th>
+                </tr>
+                <tr>
+                    <td>期中考试</td>
+                    <td>高数</td>
+                    <td>孙佳宁</td>
+                    <td>一般</td>
+                    <td>80</td>
+                    <td>2019-06-06</td>
+                    <td>
+                        <a href="../admin/admin.score.html"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                       
+                    </td>
+                </tr>
+                 <tr>
+                    <td>期末考试</td>
+                    <td>高数</td>
+                    <td>孙佳宁</td>
+                    <td>一般</td>
+                    <td>90</td>
+                    <td>2019-07-06</td>
+                    <td>
+                        <a href="../admin/admin.score.html"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>期末考试</td>
+                    <td>数电</td>
+                    <td>张日明</td>
+                    <td>一般</td>
+                    <td>70</td>
+                    <td>2019-07-06</td>
+                    <td>
+                        <a href="../admin/admin.score.html"><img src="../../img/read.png" alt="查看" title="查看"/></a>
+                        
+                    </td>
+                </tr>
+               
+            </table>
+
+        </div>
+<div class="remove" id="removeUse">
+    <div class="removerChid">
+        <h2>提示</h2>
+        <div class="removeMain">
+            <p>你确定要删除该用户吗？</p>
+            <a href="#" id="yes">确定</a>
+            <a href="#" id="no">取消</a>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</body>
+</html>

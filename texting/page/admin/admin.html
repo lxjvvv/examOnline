@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>admin</title>
+<script src="../../js/jquery.min.js"></script>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/bootstrap.min.js"></script>
+<link href="../../css/body.css" rel="stylesheet" type="text/css" />
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $(".level1 > a").click(function(){
+    $(this).addClass("current") 
+    .next().show() 
+    .parent().siblings().children("a").removeClass("current")
+    .next().hide(); 
+    return false;
+  }); 
+});
+</script>
+</head>
+
+<body>
+<!--header-->
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <h3>在线考试系统--管理员</h3>
+      <div class="row1">
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown"> xxx管理员 <span class="caret"></span> </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li> <a href="#">个人信息</a> </li>
+            <li role="presentation"> <a href="#">修改密码</a> </li>
+            <li role="presentation"> <a href="#">切换账号</a> </li>
+            <li role="presentation"> <a href="#">退出登陆</a> </li>
+          </ul>
+          <a href="#" class="exit"><img src="../../img/exit.png" width="25" height="25">&nbsp;退出登陆 </a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--left-->
+<div class="left">
+  <ul class="menu">
+    <li class="level1"> <a href="#">功能</a> </li>
+    <li class="level1"> <a href="#">试卷管理</a>
+      <ul class="level2">
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">题库管理</a>
+      <ul class="level2">
+        <li><a href="#"> 增加</a></li>
+        <li><a href="#">删除</a></li>
+        <li><a href="#"> 查看</a></li>
+        <li><a href="#">修改</a></li>
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">成绩管理</a>
+      <ul class="level2">
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">教师信息管理</a>
+      <ul class="level2">
+        <li><a href="#"> 增加</a></li>
+        <li><a href="#">删除</a></li>
+        <li><a href="#"> 查看</a></li>
+        <li><a href="#">修改</a></li>
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">学生信息管理</a>
+      <ul class="level2">
+        <li><a href="#"> 增加</a></li>
+        <li><a href="#">删除</a></li>
+        <li><a href="#"> 查看</a></li>
+        <li><a href="#">修改</a></li>
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">公告管理</a>
+      <ul class="level2">
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">考场管理</a>
+      <ul class="level2">
+      </ul>
+    </li>
+    <li class="level1"> <a href="#">退出系统</a> </li>
+  </ul>
+</div>
+<!--left end--> 
+<!--right starts-->
+<div class="right">
+  <div class="title">
+    <div class="box1"> <a href="#">未用过的试题（2）</a> </div>
+    <div class="box2"> <a href="#">已用过的试题（1）</a> </div>
+    <div class="box3"> <a  href="#">全部试题（3）</a> </div>
+  </div>
+  <div class="content">
+  <div class="inbox1></div>
+  </div>
+</div>
+<!--right ends-->
+
+</body>
+</html>

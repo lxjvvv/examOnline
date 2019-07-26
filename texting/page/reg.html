@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>regist</title>
+<link href="../css/reg.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery.min.js"></script>
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="../js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg">
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<div class="main">
+<!--注册头部starts-->
+<div class="head">
+  <h2>注册</h2>
+</div>
+<!--注册头部ends--> 
+<!--注册内容starts-->
+<div class="content">
+  <ul id="myTab" class="nav nav-tabs">
+    <li class="active"> <a href="#dota" data-toggle="tab" > 学生 </a> </li>
+    <li><a href="#lol" data-toggle="tab">老师</a></li>
+  </ul>
+  <!--内容starts-->
+  <div id="myTabContent" class="tab-content"> 
+    <!--学生端内容starts-->
+    <div class="tab-pane fade in active" id="dota">
+      <div class="inbox">
+        <input type="text" class="form-control" placeholder="请输入您的学号" data-toggle="tooltip" data-placement="right" title="十位有效数字如：2018012765"
+    >
+        <br>
+        <input type="text" class="form-control" placeholder="请输入您的姓名">
+        <br>
+        <input type="text" class="form-control" placeholder="请输入您的班级">
+        <br>
+        <input type="text" class="form-control" placeholder="请输入您的电话">
+        <br>
+        <input type="text" class="form-control" placeholder="请输入您的邮箱">
+        <br>
+        <input type="password" class="form-control" placeholder="请输入您的密码" data-toggle="tooltip" data-placement="right" title="长度为8-20，包含字母数字和特殊字符">
+        <br>
+        <input type="password" class="form-control" placeholder="请再次确认您的密码">
+        <br>
+        <div class="but">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal" herf="#">注册</button>
+          <!--提示栏starts-->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title">提示</h4>
+                </div>
+                <!-- /.modal-header --> 
+                <br />
+                <h4>
+                注册成功
+                <h4>
+                <br />
+                <br />
+                <button data-dismiss="modal" class="btn btn-default" type="button">关闭</button>
+                <button  type="button" ><a href="login.html">去登陆</a></button>
+              </div>
+              <!-- /.modal-content --> 
+            </div>
+            <!-- /.modal-dialog --> 
+          </div>
+          <!--提示栏ends--> 
+        </div>
+        <!--注册按钮ends--> 
+      </div>
+    </div>
+    
+    <!--教师端starts-->
+    <div class="tab-pane fade" id="lol">
+      <div class="inbox">
+        <input type="text" class="form-control" placeholder="请输入您的教师编号">
+        <br>
+        <input type="text" class="form-control"placeholder="请输入您的姓名">
+        <br />
+        <input type="text" class="form-control" placeholder="请输入您的电话">
+        <br>
+        <input type="text" class="form-control" placeholder="请输入您的邮箱">
+        <br>
+        <input type="password" class="form-control" placeholder="请输入您的密码" data-toggle="tooltip" data-placement="right" title="长度为8-20，包含字母数字和特殊字符">
+        <br>
+        <input type="password" class="form-control" placeholder="请再次确认输入您的密码" />
+        <br>
+        <!--注册按钮starts-->
+        <div class="but">
+          <button type="button" class="btn btn-info" text-align="center" data-toggle="modal" data-target="#myModal">注册</button>
+        </div> <!--注册按钮ends-->
+      </div>
+    </div>
+     <!--教师端内容ends-->
+  </div>
+   <!--内容ends-->
+</div>
+</body>
+</html>

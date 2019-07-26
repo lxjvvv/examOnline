@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>admin login</title>
+<link href="../css/admin login.css" rel="stylesheet" type="text/css" />
+<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+
+<body class="bg">
+	<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<div class="main">
+  <div class="head">
+    <h2>登录</h2>
+	 <br>
+	 <br>
+  </div>
+  <style>
+p{
+  margin-left:10px;
+  margin-top:10px;
+}
+</style>
+
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="dota">
+      <div class="inbox">
+        <input type="text" class="form-control" placeholder="请输入管理员编号" data-toggle="tooltip" data-placement="right" title="十位有效数字如：2018012765">
+        <br>
+        <input type="password" class="form-control" placeholder="请输入密码" data-toggle="tooltip" data-placement="right" title="长度为8-20，包含字母数字和特殊字符">
+        <br>
+		  <p style="float: right"><a href="#" class="a1">找回密码 </a></p>
+		 <br>
+		  <br>
+		  <br>
+        <div class="but">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal"><a href="admin/admin.text.html">登录</a></button>
+			<br>
+			<br>
+          <!-- /.modal-dialog --> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
